@@ -1,0 +1,81 @@
+nav{
+    background: rgba(0,0,0,0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 40%;
+    transform: translateY(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    background: rgba(153, 149, 149, 0.8);
+}
+
+nav a.active{
+    background: var(--color-light);
+    color: var(--color-light);
+}
+
+
+/* --------------MEDIA QUERIES (MEDIUM DEVICES)----------------- */
+
+@media screen and (max-width:1024px){
+  nav{
+   
+    position: fixed;
+    left:35%;
+    
+}
+
+
+}
+/* --------------MEDIA QUERIES (MEDIUM DEVICES)----------------- */
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+  nav{
+   
+    position: fixed;
+    left:28%;
+    
+}
+
+
+}
+/* --------------MEDIA QUERIES (Small DEVICES)----------------- */
+
+@media screen and (min-width: 400px) and (max-width: 599px){
+  nav{
+   
+    position: fixed;
+    left:12.5%;
+    
+}
+
+
+}
+@media screen and (min-width: 300px) and (max-width: 399px){
+  nav{
+   
+    position: fixed;
+    left:5.5%;
+    
+}
+
+
+}
